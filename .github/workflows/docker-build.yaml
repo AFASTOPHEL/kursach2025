@@ -21,10 +21,10 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/backend_kursach:latest
+          tags: sepafa/backend_kursach:latest
       - name: Build and push Frontend
         uses: docker/build-push-action@v4
         with:
           context: ./frontend
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/front_kursach:latest
+          tags: sepafa/front_kursach:latest
